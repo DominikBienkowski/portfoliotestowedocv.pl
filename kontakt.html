@@ -1,0 +1,70 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylekontakt.css" type="text/css"/>
+<title>Kontakt do mnie</title>
+
+</head>
+<body>
+<div id = "kontener">
+
+<div id="naglowek1">
+ <a href="index.html" style="color: white;"> <img src="https://media0.giphy.com/media/JnvzeXHUZJiHVY2tPY/giphy.gif?cid=ecf05e47apq687bq6s59ti05jrwbd22rzpv9w6rdrznunsk3&rid=giphy.gif&ct=s"
+ alt="Opis obrazka" height="200px" width="200px"> </a> 
+</div>
+<div id="naglowek">
+<p>
+<h2> </h2>
+</p>
+</div>
+
+<div class="square">
+<p> 
+<iframe src="https://calendar.google.com/calendar/embed?height=274&wkst=1&bgcolor=%23795548&ctz=Europe%2FWarsaw&title=Portfolio&src=ZWNhNmQ3MTcyMDQ0OTM1ZTk0ZWI4NjliMThmNDJiYzFjNz
+ZmNGQxNTUzMDQzYjIzNjEyODg4ZTQ5NDVlNmZlN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cGwucG9saXNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688&color=%230B8043"
+ style="border:solid 1px #777" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+
+
+</div>
+
+<div class="square1">
+<p>
+<h1>Formularz kontaktowy</h1>
+	<form id="contact-form">
+		<label for="name">Imię i nazwisko:</label>
+		<input type="text" id="name" name="name" required>
+		
+		<label for="email">Adres email:</label>
+		<input type="email" id="email" name="email" required>
+		
+		<label for="message">Wiadomość:</label>
+		<textarea id="message" name="message" rows="5" required></textarea>
+		
+		<button type="submit">Wyślij wiadomość</button>
+	</form>
+	
+	<script>
+		document.getElementById("contact-form").addEventListener("submit", function(event) {
+			event.preventDefault();
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+			window.location.href = "mailto:dominik6373pl@gmail.com?subject=" + encodeURIComponent("Wiadomość ze strony internetowej") + "&body=" + encodeURIComponent("Imię i nazwisko: " + name + "\n\nAdres email: " + email + "\n\nWiadomość:\n" + message);
+		});
+	</script>
+</p>
+</div>
+
+<div id="stopka">
+<p>
+
+
+</p>
+</div>
+</div>
+
+
+</body>
+</html>
+
